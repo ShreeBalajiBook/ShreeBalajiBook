@@ -17,6 +17,7 @@
   margin-right: 2rem;
 }
 .navbar-links a:hover {
+  color: gold;
   padding-bottom: 2px;
   text-decoration: underline;
 }

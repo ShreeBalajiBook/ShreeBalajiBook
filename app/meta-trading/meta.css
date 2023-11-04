@@ -117,6 +117,21 @@
   width: 100%;
   height: 100%;
 }
+.meta-trading_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 5px;
+  width: 100%;
+}
+.meta-trading_link a {
+  color: white;
+  text-decoration: none; 
+}
+.meta-trading_link a:hover {
+  color: gold;
+}
 @media screen and (min-width: 601px) and (max-width: 1040px) {
   .meta-trading {
     padding: 0.25rem;

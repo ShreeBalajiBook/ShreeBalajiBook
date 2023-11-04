@@ -43,6 +43,10 @@
   outline: 0;
   border: 0;
 }
+.meta-trading_title button:hover {
+  color: #000;
+  background-color: rgb(206, 206, 206);
+}
 .meta-trading_image h1 {
   display: none;
 }

@@ -350,8 +350,180 @@ const LiveRates = () => {
         </div>
       </div>
       {/* International */}
-      {/* <h5>International</h5>
-      <div className="liverates-rates"></div> */}
+      <h5>International</h5>
+      <div className="slider">
+        {/* i have add the commodity 7 * 2 = 14 to make is smooth no stopping or lagging */}
+        <div className="slide-track">
+          <div className="liverate-slide">
+            <p>COMEXFUTURE GOLD:</p>
+            <p
+              className={
+                metalrates.mcxgold &&
+                metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."]
+                  ? "co-green"
+                  : "co-red"
+              }
+            >
+              {metalrates.mcxgold ? metalrates["mcxgold"]["Last"] : "loading"}
+            </p>
+            <div className="arrow-live_rate">
+              {metalrates.mcxgold &&
+              metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."] ? (
+                <BiSolidUpArrow size={10} color="green" />
+              ) : (
+                <BiSolidDownArrow size={10} color="red" />
+              )}
+            </div>
+          </div>
+          <div className="liverate-slide">
+            <p>COMEXFUTURE SILVER:</p>
+            <p
+              className={
+                metalrates.mcxgold &&
+                metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."]
+                  ? "co-green"
+                  : "co-red"
+              }
+            >
+              {metalrates.mcxgold ? metalrates["mcxgold"]["Last"] : "loading"}
+            </p>
+            <div className="arrow-live_rate">
+              {metalrates.mcxgold &&
+              metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."] ? (
+                <BiSolidUpArrow size={10} color="green" />
+              ) : (
+                <BiSolidDownArrow size={10} color="red" />
+              )}
+            </div>
+          </div>
+          <div className="liverate-slide">
+            <p>SPOT GOLD:</p>
+            <p
+              className={
+                metalrates.mcxgold &&
+                metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."]
+                  ? "co-green"
+                  : "co-red"
+              }
+            >
+              {metalrates.mcxgold ? metalrates["mcxgold"]["Last"] : "loading"}
+            </p>
+            <div className="arrow-live_rate">
+              {metalrates.mcxgold &&
+              metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."] ? (
+                <BiSolidUpArrow size={10} color="green" />
+              ) : (
+                <BiSolidDownArrow size={10} color="red" />
+              )}
+            </div>
+          </div>
+          <div className="liverate-slide">
+            <p>SPOT SILVER:</p>
+            <p
+              className={
+                metalrates.mcxgold &&
+                metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."]
+                  ? "co-green"
+                  : "co-red"
+              }
+            >
+              {metalrates.mcxgold ? metalrates["mcxgold"]["Last"] : "loading"}
+            </p>
+            <div className="arrow-live_rate">
+              {metalrates.mcxgold &&
+              metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."] ? (
+                <BiSolidUpArrow size={10} color="green" />
+              ) : (
+                <BiSolidDownArrow size={10} color="red" />
+              )}
+            </div>
+          </div>
+          <div className="liverate-slide">
+            <p>COMEXFUTURE GOLD:</p>
+            <p
+              className={
+                metalrates.mcxgold &&
+                metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."]
+                  ? "co-green"
+                  : "co-red"
+              }
+            >
+              {metalrates.mcxgold ? metalrates["mcxgold"]["Last"] : "loading"}
+            </p>
+            <div className="arrow-live_rate">
+              {metalrates.mcxgold &&
+              metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."] ? (
+                <BiSolidUpArrow size={10} color="green" />
+              ) : (
+                <BiSolidDownArrow size={10} color="red" />
+              )}
+            </div>
+          </div>
+          <div className="liverate-slide">
+            <p>COMEXFUTURE SILVER:</p>
+            <p
+              className={
+                metalrates.mcxgold &&
+                metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."]
+                  ? "co-green"
+                  : "co-red"
+              }
+            >
+              {metalrates.mcxgold ? metalrates["mcxgold"]["Last"] : "loading"}
+            </p>
+            <div className="arrow-live_rate">
+              {metalrates.mcxgold &&
+              metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."] ? (
+                <BiSolidUpArrow size={10} color="green" />
+              ) : (
+                <BiSolidDownArrow size={10} color="red" />
+              )}
+            </div>
+          </div>
+          <div className="liverate-slide">
+            <p>SPOT GOLD:</p>
+            <p
+              className={
+                metalrates.mcxgold &&
+                metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."]
+                  ? "co-green"
+                  : "co-red"
+              }
+            >
+              {metalrates.mcxgold ? metalrates["mcxgold"]["Last"] : "loading"}
+            </p>
+            <div className="arrow-live_rate">
+              {metalrates.mcxgold &&
+              metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."] ? (
+                <BiSolidUpArrow size={10} color="green" />
+              ) : (
+                <BiSolidDownArrow size={10} color="red" />
+              )}
+            </div>
+          </div>
+          <div className="liverate-slide">
+            <p>SPOT SILVER:</p>
+            <p
+              className={
+                metalrates.mcxgold &&
+                metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."]
+                  ? "co-green"
+                  : "co-red"
+              }
+            >
+              {metalrates.mcxgold ? metalrates["mcxgold"]["Last"] : "loading"}
+            </p>
+            <div className="arrow-live_rate">
+              {metalrates.mcxgold &&
+              metalrates.mcxgold.Last >= metalrates["mcxgold"]["Prev."] ? (
+                <BiSolidUpArrow size={10} color="green" />
+              ) : (
+                <BiSolidDownArrow size={10} color="red" />
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

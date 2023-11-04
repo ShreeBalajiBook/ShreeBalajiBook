@@ -65,6 +65,10 @@ const MetaTrading = () => {
             </div>
           </div>
         </div>
+        <div className="meta-trading_link">
+          <a href="/">CLICK HERE</a>
+          <p>to get your demo id and password</p>
+        </div>
         <div className="meta-trading_tutorial">
           <div className="meta-trading_line" />
           <div className="meta-trading_tutorial-title">
