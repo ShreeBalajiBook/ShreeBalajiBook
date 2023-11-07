@@ -3,13 +3,16 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineCancel } from "react-icons/md";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isToggle, setisToggle] = useState(false);
 
   return (
     <nav className="navbar">
-      <h1>Shree Balaji Book</h1>
+      <Link href="/" style={{textDecoration: "none"}}>
+        <h1>Shree Balaji Book</h1>
+      </Link>
       <div className="navbar-links large_device">
         <a href="/">Home</a>
         <a href="/meta-trading">Meta Trading</a>

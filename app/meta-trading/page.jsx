@@ -1,14 +1,12 @@
 "use client";
 import Image from "next/image";
-import ReactPlayer from "react-player";
 import playstore from "../../assets/play_store.png";
 import appstore from "../../assets/app_store.png";
 import metatrader from "../../assets/metatrader-5-logo.png";
 import { BsPauseFill, BsFillPlayFill } from "react-icons/bs";
-
-// import tradingvideo from "";
 import "./meta.css";
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 const MetaTrading = () => {
   const [isVideoplayed, setIsVideoPlayed] = useState(false);
@@ -23,6 +21,7 @@ const MetaTrading = () => {
       vidref.current.play();
     }
   };
+
   return (
     <>
       <div className="meta-trading">
@@ -39,34 +38,44 @@ const MetaTrading = () => {
             <Image src={metatrader} alt="metatrader" />
           </div>
           <div className="meta-trading_download_buttons">
-            <div className="meta-trading_download_buttons-button">
-              <span>
-                <Image
-                  src={playstore}
-                  height={25}
-                  width={25}
-                  style={{ marginRight: "5px", marginTop: "5px" }}
-                  alt="meta_trader_data"
-                />
-              </span>
-              Play Store
-            </div>
-            <div className="meta-trading_download_buttons-button">
-              <span>
-                <Image
-                  src={appstore}
-                  height={25}
-                  width={25}
-                  style={{ marginRight: "5px", marginTop: "5px" }}
-                  alt="meta-trader-data"
-                />
-              </span>
-              App Store
-            </div>
+            <Link
+              style={{ textDecoration: "none" }}
+              href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5&hl=en&referrer=ref_id%3d6368602537853342661%26utm_source%3dwww.metatrader5.com%26utm_campaign%3dinstall.metaquotes "
+            >
+              <div className="meta-trading_download_buttons-button">
+                <span>
+                  <Image
+                    src={playstore}
+                    height={25}
+                    width={25}
+                    style={{ marginRight: "5px", marginTop: "5px" }}
+                    alt="meta_trader_data"
+                  />
+                </span>
+                Play Store
+              </div>
+            </Link>
+            <Link
+              style={{ textDecoration: "none" }}
+              href="https://apps.apple.com/us/app/metatrader-5/id413251709?platform=iphone"
+            >
+              <div className="meta-trading_download_buttons-button">
+                <span>
+                  <Image
+                    src={appstore}
+                    height={25}
+                    width={25}
+                    style={{ marginRight: "5px", marginTop: "5px" }}
+                    alt="meta-trader-data"
+                  />
+                </span>
+                App Store
+              </div>
+            </Link>
           </div>
         </div>
         <div className="meta-trading_link">
-          <a href="/">CLICK HERE</a>
+          <a href="/meta-trading/demo-id">CLICK HERE</a>
           <p>to get your demo id and password</p>
         </div>
         <div className="meta-trading_tutorial">
