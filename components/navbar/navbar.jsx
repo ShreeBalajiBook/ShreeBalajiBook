@@ -4,6 +4,8 @@ import "./navbar.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineCancel } from "react-icons/md";
 import Link from "next/link";
+import logo from "../../assets/logo-white.png"
+import Image from "next/image";
 
 const Navbar = () => {
   const [isToggle, setisToggle] = useState(false);
@@ -11,7 +13,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link href="/" style={{textDecoration: "none"}}>
+        <div className="navbar_brand">
+
+        <Image src={logo} height={50} width={50}/>
         <h1>Shree Balaji Book</h1>
+        </div>
       </Link>
       <div className="navbar-links large_device">
         <a href="/">Home</a>

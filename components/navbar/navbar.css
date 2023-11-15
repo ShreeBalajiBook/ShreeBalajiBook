@@ -52,6 +52,14 @@
   margin-bottom: 1rem;
   padding-left: 1rem;
 }
+.navbar_brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_brand img {
+  object-fit: cover;
+}
 
 @media screen and (min-width: 322px) and (max-width: 600px) {
   .navbar {
