@@ -8,7 +8,7 @@
 
 .navbar h1 {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 .navbar-links a {
@@ -58,7 +58,9 @@
   align-items: center;
 }
 .navbar_brand img {
-  object-fit: cover;
+  height: 60px;
+  width: 60px;
+  object-fit: fill;
 }
 
 @media screen and (min-width: 322px) and (max-width: 600px) {
@@ -82,8 +84,4 @@
   .small_device {
     display: block;
   }
-}
-
-@keyframes Navbar {
-  
 }

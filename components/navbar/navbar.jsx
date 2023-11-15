@@ -15,7 +15,7 @@ const Navbar = () => {
       <Link href="/" style={{textDecoration: "none"}}>
         <div className="navbar_brand">
 
-        <Image src={logo} height={50} width={50}/>
+        <Image src={logo}/>
         <h1>Shree Balaji Book</h1>
         </div>
       </Link>
